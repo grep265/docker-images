@@ -1,6 +1,6 @@
-# Gazebo Harmonic docker container
+# Gazebo Harmonic docker image
 
-This Docker container runs Gazebo Harmonic. You can run Gazebo with GUI support inside the container. 
+This Docker image runs Gazebo Harmonic. You can run Gazebo with GUI support inside the container. 
 
 ## Pre-built image - Docker hub
 
@@ -10,7 +10,7 @@ You can pull the pre-built image:
 docker pull grep007/gazebo:harmonic
 ```
 
-## Building the Container
+## Building the image
 
 Inside the folder where you have the Dockerfile, replace the Dockerfile with the one that is provided. After, run the following command:
 
@@ -20,7 +20,7 @@ docker build -t gazebo:harmonic .
 
 ## Running the Container
 
-After building the container, you can run it using the following command:
+After building the image, you can run it using the following command:
 
 ```bash
 docker run -it -v /tmp/.X11-unix:/tmp/.X11-unix -e DISPLAY=$DISPLAY gazebo:harmonic

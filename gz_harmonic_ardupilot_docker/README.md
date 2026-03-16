@@ -1,6 +1,6 @@
-# Gazebo Harmonic & Ardupilot models docker container
+# Gazebo Harmonic & Ardupilot models docker image
 
-This Docker container runs Gazebo Harmonic with Ardupilot models. This method is not recommended as Gazebo will run too slow. It's better to run it on WSL directly instead of inside a container. However, Gazebo simulator runs very well inside the container with less complex models.
+This Docker image runs Gazebo Harmonic with Ardupilot models. This method is not recommended as Gazebo will run too slow. It's better to run it on WSL directly instead of inside a container. However, Gazebo simulator runs very well inside the container with less complex models.
 
 ## Pre-built image - Docker hub
 
@@ -10,7 +10,7 @@ You can pull the pre-built image:
 docker pull grep007/gazebo:harmonic-ardupilot
 ```
 
-## Building the Container
+## Building the image
 
 Inside the folder where you have the docker file, replace the Dockerfile with the one that is provided. After, run the following command:
 
@@ -20,7 +20,7 @@ docker build -t gazebo:harmonic-ardupilot .
 
 ## Running the Container
 
-After building the container, you can run it using the following command:
+After building the image, you can run it using the following command:
 
 ```bash
 docker run -it -v /tmp/.X11-unix:/tmp/.X11-unix -e DISPLAY=$DISPLAY gazebo:harmonic-ardupilot
