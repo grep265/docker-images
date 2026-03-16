@@ -1,12 +1,17 @@
 # Docker Repository
 
 This repository contains several Dockerfiles used to create Docker images with a GUI for different purposes. You can find more information in each folder.
-These images are mainly intended to be run on WSL 2 with Windows 11.
 
-## GUI with Docker
+## Windows (WSL2)
 
-For instructions about how to allow GUI applications, check [Linux GUI apps on the WSL](https://learn.microsoft.com/en-us/windows/wsl/tutorials/gui-apps). Also, the Docker integration with the WSL distro needs to be available. This can be done on the Docker desktop app (Windows side) --> Settings/Resources/WSL integration.
+If you are running the containers from Windows using WSL2, make sure the following requirements are met:
 
+1. Enable GUI applications in WSL2
+Follow the official Microsoft guide to enable Linux GUI applications:
+https://learn.microsoft.com/en-us/windows/wsl/tutorials/gui-apps
+
+2. Enable Docker Desktop WSL integration
+Ensure Docker Desktop is integrated with your WSL distribution: `Docker Desktop → Settings → Resources → WSL Integration`. Enable integration for the WSL distribution you are using.
 
 ## List of dockerfiles
 
