@@ -1,6 +1,7 @@
 # Docker Repository
 
-This repository contains several dockerfiles that allow to create containers with GUI for different purposes. You can find more information in each of the folders. These containters are mainly intended to be run on WSL 2 - Win 11.
+This repository contains several Dockerfiles used to create Docker images with a GUI for different purposes. You can find more information in each folder.
+These images are mainly intended to be run on WSL 2 with Windows 11.
 
 ## GUI with Docker
 
