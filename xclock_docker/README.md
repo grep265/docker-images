@@ -1,4 +1,4 @@
-# Xclock Apps docker container
+# Xclock Apps docker image
 
 This Docker image runs the xclock app. This might serve a basic example to start testing containers with GUI capabilities.
 

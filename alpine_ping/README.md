@@ -1,6 +1,6 @@
-# Alpine docker container
+# Alpine docker image
 
-This Docker container runs the alpine and ping tools. This might serve a basic tool to test docker networks.
+This Docker image runs the alpine and ping tools. This might serve a basic tool to test docker networks.
 
 ## Pre-built image - Docker hub
 
@@ -20,7 +20,7 @@ docker build -t alpine:ping .
 
 ## Running the Container
 
-After pulling/building the container, you can run it using the following command:
+After pulling/building the image, you can run it using the following command:
 
 ```bash
 docker run -it alpine:ping
